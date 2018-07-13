@@ -1,6 +1,6 @@
 # elegant-vue
 
-> Infographic website with vue js
+> mini project static website using vue js
 
 ## Build Setup
 
