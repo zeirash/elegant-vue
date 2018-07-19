@@ -4,15 +4,18 @@
         <div class="layer-bg"></div>
     </div>
     <search-container></search-container>
+    <feature-container></feature-container>
   </div>
 </template>
 
 <script>
 import SearchContainer from './search_container.vue'
+import FeatureContainer from './feature_container.vue'
 
 export default {
   components: {
-    'search-container': SearchContainer
+    'search-container': SearchContainer,
+    'feature-container': FeatureContainer
   },
   data () {
     return {

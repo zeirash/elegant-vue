@@ -10,7 +10,6 @@
         v-bind:title="item.name"
       ></component-item>
     </div>
-    <div class="test"></div>
   </div>
 </template>
 
@@ -84,12 +83,7 @@ export default {
 }
 
 .list-item {
-  height: 400px;
+  height: 550px;
   overflow-y: scroll;
-}
-
-.test {
-  height: 400px;
-  background-color: #ccc;
 }
 </style>
