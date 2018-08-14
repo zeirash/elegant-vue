@@ -2,17 +2,20 @@
   <div id="app">
     <app-header></app-header>
     <main-content></main-content>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import Header from './components/header.vue'
 import MainContent from './components/main_content.vue'
+import Footer from './components/footer.vue'
 
 export default {
   components: {
     'app-header': Header,
-    'main-content': MainContent
+    'main-content': MainContent,
+    'app-footer': Footer
   },
   data () {
     return {
@@ -31,7 +34,9 @@ export default {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
+
 /*scroll bar style*/
 .list-item::-webkit-scrollbar-track {
   background-color: #ffffff;
@@ -47,5 +52,9 @@ a {
 .list-item:hover::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background-color: #9E9E9E;
+}
+
+.inline {
+  display: inline-block;
 }
 </style>

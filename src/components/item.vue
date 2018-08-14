@@ -28,10 +28,6 @@ export default {
 </script>
 
 <style scoped>
-.inline {
-  display: inline-block;
-}
-
 .content {
   margin: 10px;
 }
@@ -67,5 +63,23 @@ export default {
   position: absolute;
   color: #8E8E8E;
   bottom: 5px;
+}
+
+@media screen and (max-width: 1380px) {
+  .item-container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .item-container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .item-container {
+    width: 80%;
+  }
 }
 </style>

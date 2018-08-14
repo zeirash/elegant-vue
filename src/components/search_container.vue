@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 .input {
-  width: 550px;
+  width: 95%;
   border: none;
   color: #8E8E8E;
 }
@@ -66,7 +66,7 @@ export default {
   border: 1.5px solid #8E8E8E;
   border-radius: 6px;
   padding: .3em;
-  width: 600px;
+  width: 40%;
   margin: 1em auto;
   position: relative;
 }
@@ -83,7 +83,25 @@ export default {
 }
 
 .list-item {
-  height: 550px;
+  height: 500px;
   overflow-y: scroll;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+@media screen and (max-width: 1160px) {
+  .list-item {
+    justify-content: center;
+  }
+
+  .input-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .input-container {
+    width: 80%;
+  }
 }
 </style>

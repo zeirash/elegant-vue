@@ -5,17 +5,20 @@
     </div>
     <search-container></search-container>
     <feature-container></feature-container>
+    <about-container></about-container>
   </div>
 </template>
 
 <script>
 import SearchContainer from './search_container.vue'
 import FeatureContainer from './feature_container.vue'
+import AboutContainer from './about_container.vue'
 
 export default {
   components: {
     'search-container': SearchContainer,
-    'feature-container': FeatureContainer
+    'feature-container': FeatureContainer,
+    'about-container': AboutContainer
   },
   data () {
     return {
