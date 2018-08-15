@@ -1,7 +1,7 @@
 <template>
   <div class="feature-card">
     <div class="feature-img">
-        <!--img src="#" width="40" height="auto" /-->
+        <img v-bind:src="imgSrc" width="100" height="auto" />
     </div>
     <div class="feature-title">Title</div>
     <div class="feature-content">
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  props: ['height'],
+  props: ['imgSrc'],
   data () {
     return {
       
@@ -29,7 +29,7 @@ export default {
     text-align: center;
     padding: 1.2em;
     background: #fff;
-    margin: 0 2em;
+    margin: 2em 2em;
     height: 420px;
 }
 

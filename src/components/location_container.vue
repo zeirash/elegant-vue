@@ -43,4 +43,11 @@ export default {
     width: 300px;
     height: 300px;
 }
+
+@media screen and (max-width: 360px) {
+    .location-map img {
+        width: 250px;
+        height: 250px;
+    }
+}
 </style>

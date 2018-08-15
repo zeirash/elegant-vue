@@ -63,6 +63,9 @@ export default {
       },
       closeModal: function(e) {
           this.show = false
+          this.name = ''
+          this.email = ''
+          this.message = ''
       }
   }
 }
@@ -184,6 +187,10 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:befor
     font-size: 1.4rem;
 }
 
+#modal-text {
+    color: #000;
+}
+
 #ok-button {
     font-size: 1em;
     color: #fff;
@@ -193,5 +200,15 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:befor
     margin-top: 20px;
     margin-bottom:-10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+    input, textarea {
+        width: 240px;
+    }
+
+    .bar { 
+        width: 260px; 
+    }
 }
 </style>

@@ -82,4 +82,12 @@ export default {
         padding-top: 20px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .about-img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
 </style>

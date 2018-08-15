@@ -2,6 +2,7 @@
   <div id="feature-container">
     <div class="content">
         <feature-card
+          imgSrc="/dist/money.png"
         ></feature-card>
         <feature-card
         ></feature-card>
@@ -37,6 +38,7 @@ export default {
 .content {
     display: flex;
     justify-content: center;
-    padding: 4em;
+    padding: 2em;
+    flex-wrap: wrap;
 }
 </style>
