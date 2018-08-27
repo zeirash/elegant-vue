@@ -1,13 +1,15 @@
 <template>
   <div id="search-container">
     <div class="input-container">
-      <input type="text" placeholder="Search item" class="input" v-model="search"/>
-      <img src="../assets/search.png" class="search-icon" />
+      <input type="text" placeholder="Search item" class="input" v-model="search" v-on:focus="scrollToSearch()" />
+      <img src="../assets/search.png" class="search-icon" alt="" />
     </div>
     <div class="list-item">
       <component-item  v-for="(item, index) in searchItem"
         v-bind:key="index"
         v-bind:title="item.name"
+        v-bind:price="item.price"
+        v-bind:imgSrc="item.img"
       ></component-item>
     </div>
   </div>
@@ -15,6 +17,7 @@
 
 <script>
 import Item from './item.vue'
+import Data from '../data.json'
 
 export default {
   components: {
@@ -22,21 +25,7 @@ export default {
   },
   data () {
     return {
-      items: [
-        {name:"item 1", price: "price 1"},
-        {name:"item 2 sdfsdfsd", price: "price 2"},
-        {name:"item 3", price: "price 2"},
-        {name:"item 4 sdfsdfsdf", price: "price 2"},
-        {name:"item 1", price: "price 1"},
-        {name:"item 2 sdfsdfsd", price: "price 2"},
-        {name:"item 3", price: "price 2"},
-        {name:"item 4 sdfsdfsdf", price: "price 2"},
-        {name:"item 3", price: "price 2"},
-        {name:"item 4 sdfsdfsdf", price: "price 2"},
-        {name:"item 1", price: "price 1"},
-        {name:"item 2 sdfsdfsd", price: "price 2"},
-        {name:"item 3", price: "price 2"},
-      ],
+      items: Data,
       search: ""
     }
   },
@@ -46,6 +35,15 @@ export default {
       return this.items.filter((item) => {
         return item.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0
         });
+    }
+  },
+  methods: {
+    scrollToSearch: function() {
+      window.scroll({
+        top: 400, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
     }
   }
 }
@@ -83,10 +81,11 @@ export default {
 }
 
 .list-item {
-  height: 500px;
+  height: 450px;
   overflow-y: scroll;
   flex-wrap: wrap;
   display: flex;
+  align-content: flex-start;
 }
 
 @media screen and (max-width: 1160px) {

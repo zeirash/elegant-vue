@@ -53,7 +53,7 @@ export default {
                 message: this.message,
                 from_email: this.email
             }
-          emailjs.send('sendgrid', 'customtemplate', templateParams, 'user_2pcBp4posKKPW5iqt7nv2')
+          emailjs.send('elegant_houseware', 'customtemplate', templateParams, 'user_2pcBp4posKKPW5iqt7nv2')
             .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             }, function(error) {

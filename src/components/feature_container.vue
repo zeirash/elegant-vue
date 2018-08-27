@@ -2,11 +2,19 @@
   <div id="feature-container">
     <div class="content">
         <feature-card
-          imgSrc="/dist/money.png"
+          imgSrc="./dist/money.png"
+          description="Lorem ipsum, dolor sit amet consectetur adipisicing el!"
+          title="Murah"
         ></feature-card>
         <feature-card
+          imgSrc="./dist/recommended.png"
+          description="Lorem ipsum, dolor sit amet consectetur adipisicing el!"
+          title="Bermutu"
         ></feature-card>
         <feature-card
+          imgSrc="./dist/users.png"
+          description="Lorem ipsum, dolor sit amet consectetur adipisicing el!"
+          title="Banyak Pelanggan"
         ></feature-card>
     </div>
   </div>

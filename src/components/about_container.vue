@@ -7,9 +7,7 @@
         </div>
         <div class="inline description">
             <div class="about-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, corporis nemo! Laudantium voluptatum doloribus 
-                rem amet repellendus hic voluptates dicta, quia ratione adipisci? Velit assumenda dolore voluptates itaque. Blanditiis, officia.
-                rem amet repellendus hic voluptates dicta, quia ratione adipisci? Velit assumenda dolore voluptates itaque. Blanditiis, officia.
+                UD Elegant Jaya merupakan
                 <br/><br/>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, corporis nemo! Laudantium voluptatum doloribus 
                 rem amet repellendus hic voluptates dicta, quia ratione adipisci? Velit assumenda dolore voluptates itaque. Blanditiis, officia.

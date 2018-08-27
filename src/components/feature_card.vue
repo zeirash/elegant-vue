@@ -1,18 +1,18 @@
 <template>
   <div class="feature-card">
     <div class="feature-img">
-        <img v-bind:src="imgSrc" width="100" height="auto" />
+        <img v-bind:src="imgSrc" width="100" height="auto" alt="icon" />
     </div>
-    <div class="feature-title">Title</div>
+    <div class="feature-title">{{title}}</div>
     <div class="feature-content">
-        Lorem ipsum, dolor sit amet consectetur adipisicing el!
+        {{description}}
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['imgSrc'],
+  props: ['imgSrc', 'title', 'description'],
   data () {
     return {
       
@@ -36,7 +36,6 @@ export default {
 .feature-img {
     height: 100px;
     width: 100px;
-    background-color: #ccc;
     margin: 1em auto;
 }
 
@@ -47,5 +46,4 @@ export default {
 .feature-content {
     margin-top: 2em;
 }
-
 </style>

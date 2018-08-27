@@ -2,8 +2,11 @@
   <div>
     <header v-bind:class="{scrolled: isScroll}">
         <nav>
-            <div class="menu-item"><span>About</span></div>
-            <div class="menu-item"><span>Contact</span></div>
+            <div class="menu-item"><a href="#top" v-smooth-scroll="{ duration: 800, offset: 0, container: '' }"><span>logo</span></a></div>
+            <div class="menu-right">
+              <div class="menu-item"><span><a href="#about-container" v-smooth-scroll="{ duration: 800, offset: -60, container: '' }">About</a></span></div>
+              <div class="menu-item"><span><a href="#contact" v-smooth-scroll="{ duration: 800, offset: -50, container: '' }">Contact</a></span></div>
+            </div>
         </nav>
     </header>
   </div>
@@ -35,12 +38,12 @@ export default {
     header {
         position: fixed;
         width: 100%;
-        z-index: 99;
+        z-index: 9999;
         transition: all .3s;
     }
 
-    nav {
-        text-align: right;
+    .menu-right {
+      float: right;
     }
 
     .menu-item {

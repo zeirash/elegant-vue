@@ -1,7 +1,11 @@
 <template>
   <div>
-    <div class="header-bg">
+    <div class="header-bg" id="top">
         <div class="layer-bg"></div>
+        <div class="content-header">
+          Elegant Houseware<br/>
+          <span>dolor sit amet blabla</span>
+        </div>
     </div>
     <search-container></search-container>
     <feature-container></feature-container>
@@ -41,5 +45,23 @@ export default {
   opacity: .6;
   height: 100%;
   width: 100%;
+  position: absolute;
+}
+
+.content-header {
+  color: #fff;
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 150px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.content-header span {
+  font-style: italic;
+  font-size: 1.8rem;
 }
 </style>

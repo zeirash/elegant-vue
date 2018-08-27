@@ -2,15 +2,15 @@
   <div class="item-container">
     <div class="inline">
         <div class="item-img">
-            <!--img src="#" width="40" height="auto" /-->
+            <img v-bind:src="imgSrc" width="40" height="auto" alt="" />
         </div>
     </div>
     <div class="inline content">
         <div class="item-title">{{title}}</div>
         <div class="item-desc"> deskripsi singkat barang</div>
         <div class="item-price">
-          Grosir: <br/>
-          Eceran:
+          Grosir: Kontak kami<br/>
+          Eceran: {{price}}
         </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  props: ['title'],
+  props: ['title', 'price', 'imgSrc'],
   data () {
     return {
       
@@ -41,6 +41,7 @@ export default {
     display: flex;
     align-items: top;
     position: relative;
+    height: 120px;
 }
 
 .item-img {
@@ -57,12 +58,14 @@ export default {
 
 .item-desc {
   color: #8E8E8E;
+  font-size: .9rem;
 }
 
 .item-price {
   position: absolute;
   color: #8E8E8E;
   bottom: 5px;
+  font-size: .9rem;
 }
 
 @media screen and (max-width: 1380px) {
@@ -80,6 +83,24 @@ export default {
 @media screen and (max-width: 920px) {
   .item-container {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .item-title {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .item-img {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 6px;
+  }
+
+  .item-container {
+    height: 100px;
   }
 }
 </style>

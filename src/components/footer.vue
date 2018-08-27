@@ -1,19 +1,21 @@
 <template>
   <div>
-    <footer>
+    <footer id="contact">
       <div class="flex-container">
         <div id="form-container">
           <div class="header-group">Kontak Kami</div>
           <contact-container></contact-container>
         </div>
         <div id="link-container">
-          <link-container></link-container>
+          <link-container
+            waIcon="./dist/whatsapp_logo.png"
+          ></link-container>
         </div>
         <div id="location-container">
-          <div class="header-group">Lokasi Kami</div>
+          <div class="header-group location-title">Lokasi Kami</div>
           <div class="flex-container">
             <location-container
-              imgSrc="/dist/map_dupak.png"
+              imgSrc="./dist/map_dupak.png"
             ></location-container>
             <location-container></location-container>
           </div>

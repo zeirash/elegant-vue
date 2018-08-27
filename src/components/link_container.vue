@@ -2,35 +2,35 @@
   <div>
     <div class="link-group">
         <div class="icon">
-          <img src="../assets/whatsapp-logo.png" />
+          <img :src="loadImg('whatsapp_logo.png')" alt="" />
         </div>
         <div class="text">+62 895 2368 6433</div>
     </div>
     <div class="link-group">
         <div class="icon">
-          <img src="../assets/call-answer.png" />
+          <img :src="loadImg('whatsapp_logo.png')" alt="" />
         </div>
-        <div class="text">+62 895 2368 6433</div>
+        <div class="text">+62 812 3395 5556</div>
     </div>
     <div class="link-group">
         <div class="icon">
-          <img src="../assets/tokopedia-logo.png" />
+          <img :src="loadImg('tokopedia-logo.png')" alt="" />
         </div>
         <div class="text">UD. Elegant Jaya<br/>
         <span class="desc-text"><a href="https://tokopedia.link/XZFeNucdnP" target="_blank">https://tokopedia.link/XZFeNucdnP</a></span></div>
     </div>
     <div class="link-group">
         <div class="icon loc">
-          <img src="../assets/map-logo.png" />
+          <img :src="loadImg('map_logo.png')" alt="" />
         </div>
         <div class="text">Dupak Grosir Surabaya<br/>
         <span class="desc-text">jl sdlfkjsdf lt 9</span></div>
     </div>
     <div class="link-group">
         <div class="icon loc">
-          <img src="../assets/map-logo.png" />
+          <img :src="loadImg('map_logo.png')" alt="" />
         </div>
-        <div class="text">Dupak Grosir Surabaya<br/>
+        <div class="text">lala<br/>
         <span class="desc-text">jl sdlfkjsdf lt 9</span></div>
     </div>
   </div>
@@ -44,7 +44,9 @@ export default {
     }
   },
   methods: {
-      
+    loadImg: function (path) {
+      return './dist/' + path
+    }  
   }
 }
 </script>

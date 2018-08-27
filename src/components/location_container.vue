@@ -3,7 +3,7 @@
       <div class="location-content">
           <div class="location-group">
               <div class="location-map">
-                  <img v-bind:src="imgSrc" />
+                  <img v-bind:src="imgSrc" alt="" />
               </div>
           </div>
       </div>
