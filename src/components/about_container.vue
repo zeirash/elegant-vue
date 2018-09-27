@@ -1,6 +1,6 @@
 <template>
   <div id="about-container">
-    <div class="about-title">About Us</div>
+    <div class="about-title">Tentang Kami</div>
     <div class="about-content">
         <div class="inline">
             <div class="about-img"></div>

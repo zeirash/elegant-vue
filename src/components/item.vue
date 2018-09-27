@@ -1,27 +1,66 @@
 <template>
   <div class="item-container">
     <div class="inline">
-        <div class="item-img">
-            <img v-bind:src="imgSrc" width="40" height="auto" alt="" />
+      <div class="item-img">
+        <div id="slider">
+          <slider animation="normal" :auto="false" width="120px" height="120px" class="slider-container">
+            <slider-item v-for="(img, index) in imgSrc" :key="index">
+              <img v-bind:src="loadImg(img)" width="120px" height="120px" :alt="title" class="slider-img" v-on:click="zoomImg(img, title)" />
+            </slider-item>
+          </slider>
         </div>
+      </div>
     </div>
     <div class="inline content">
         <div class="item-title">{{title}}</div>
-        <div class="item-desc"> deskripsi singkat barang</div>
+        <div class="item-desc">{{desc}}</div>
         <div class="item-price">
           Grosir: Kontak kami<br/>
-          Eceran: {{price}}
+          Eceran: Rp. {{numberWithCommas(price)}}/{{metric}}
         </div>
     </div>
-  </div>
+    <!-- The Modal -->
+      <div v-if="clicked" id="myModal" class="modal-dialog">
+        <span class="close" v-on:click="closeImg()">&times;</span>
+        <img class="modal-img" :src="loadImg(myImg)">
+        <div id="caption">{{caption}}</div>
+      </div>
+    </div>
 </template>
 
 <script>
+import { Slider, SliderItem } from 'vue-easy-slider'
+
 export default {
-  props: ['title', 'price', 'imgSrc'],
+  props: ['title', 'price', 'imgSrc', 'desc', 'metric'],
+  components: {
+    'slider': Slider,
+    'slider-item': SliderItem
+  },
   data () {
     return {
-      
+      clicked: false,
+      caption: '',
+      myImg: ''
+    }
+  },
+  methods: {
+    loadImg: function (path) {
+      return './dist/' + path
+    },
+    zoomImg: function(img, caption) {
+      this.myImg = img
+      this.caption = caption
+      this.clicked = true
+    },
+    customId: function(key, index) {
+      return 'img' + key + 'index' + index
+    },
+    closeImg: function() {
+      this.clicked = false
+    },
+    numberWithCommas: function(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
   }
 }
@@ -59,6 +98,7 @@ export default {
 .item-desc {
   color: #8E8E8E;
   font-size: .9rem;
+  margin-top: 4px;
 }
 
 .item-price {
@@ -66,6 +106,15 @@ export default {
   color: #8E8E8E;
   bottom: 5px;
   font-size: .9rem;
+}
+
+.slider-img, .slider-container {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.slider-img:hover {
+  opacity: .8;
 }
 
 @media screen and (max-width: 1380px) {
@@ -89,18 +138,78 @@ export default {
 @media screen and (max-width: 400px) {
   .item-title {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
-  .item-img {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
+  .item-img, .slider-img, .slider-container {
+    width: 100px !important;
+    height: 100px !important;
     border-radius: 6px;
   }
 
   .item-container {
     height: 100px;
   }
+
+  .item-price, .item-desc {
+    font-size: .7rem;
+  }
+}
+
+/* Modal Content (Image) */
+.modal-img {
+  margin: 80px auto 0;
+  display: block;
+  width: 60%;
+  max-width: 500px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-img, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-img {
+      width: 100%;
+      margin-top: 100px;
+    }
 }
 </style>

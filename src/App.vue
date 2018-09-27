@@ -57,4 +57,28 @@ a {
 .inline {
   display: inline-block;
 }
+
+.btn {
+  z-index: 22 !important;
+  width: 35px !important;
+}
+
+.indicators {
+  z-index: 33 !important;
+}
+
+.slider-item {
+  z-index: 11 !important;
+}
+
+/* modal dialog */
+.modal-dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999 !important;
+    background: rgba(0,0,0,0.8); 
+}
 </style>

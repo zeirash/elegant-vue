@@ -12,10 +12,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "emailjs-com": "^2.2.4",
+    "mongodb": "^3.1.6",
     "npm": "^6.3.0",
     "vue": "^2.5.17",
+    "vue-easy-slider": "^3.2.0",
     "vue-resource": "^1.5.1",
-    "vue2-google-maps": "^0.10.2",
     "vue2-smooth-scroll": "^1.0.3"
   },
   "browserslist": [

@@ -35,7 +35,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]',
-          publicPath: process.env.NODE_ENV === 'production' ? './dist/' : '/'
+          publicPath: './dist/'
         }
       }
     ]

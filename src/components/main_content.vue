@@ -3,8 +3,8 @@
     <div class="header-bg" id="top">
         <div class="layer-bg"></div>
         <div class="content-header">
-          Elegant Houseware<br/>
-          <span>dolor sit amet blabla</span>
+          Elegant Jaya Houseware<br/>
+          <span>banyak pilihan, sedikit biaya</span>
         </div>
     </div>
     <search-container></search-container>
@@ -50,7 +50,7 @@ export default {
 
 .content-header {
   color: #fff;
-  z-index: 99;
+  z-index: 90;
   position: absolute;
   left: 0;
   right: 0;

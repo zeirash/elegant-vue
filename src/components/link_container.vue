@@ -14,10 +14,17 @@
     </div>
     <div class="link-group">
         <div class="icon">
-          <img :src="loadImg('tokopedia-logo.png')" alt="" />
+          <img :src="loadImg('tokopedia_logo.png')" alt="" />
         </div>
         <div class="text">UD. Elegant Jaya<br/>
-        <span class="desc-text"><a href="https://tokopedia.link/XZFeNucdnP" target="_blank">https://tokopedia.link/XZFeNucdnP</a></span></div>
+        <span class="desc-text"><a href="https://tokopedia.link/XZFeNucdnP" target="_blank">https://tokopedia.link/XZFeNucdnP</a></span>
+        </div>
+    </div>
+    <div class="link-group">
+        <div class="icon">
+          <img :src="loadImg('instagram_logo.png')" alt="" />
+        </div>
+        <div class="text"><span><a href="https://www.instagram.com/elegant_jaya" target="_blank">@elegant_jaya</a></span></div>
     </div>
     <div class="link-group">
         <div class="icon loc">
@@ -55,7 +62,7 @@ export default {
 .link-group {
   display: flex;
   align-items: center;
-  margin: 1em .5em;
+  margin: .6em .5em;
 }
 
 .icon img {
@@ -68,6 +75,6 @@ export default {
 }
 
 .desc-text {
-  font-size: .9rem;
+  font-size: .8rem;
 }
 </style>

@@ -1,80 +1,100 @@
 [
     {
-        "name":"item 11",
+        "name":"MUG-450",
+        "desc": "Mug 450ml",
+        "price": "25,000",
+        "img": ["mug450_biru.jpeg", "mug450_hijau.jpeg"],
+        "metric": "pcs"
+    },
+    {
+        "name":"SERBET SAKURA 01",
+        "desc": "Full katun uk 50x50",
+        "price": "55,000",
+        "img": ["serbet_sakura01.jpeg", "serbet_sakura01-1.jpeg"],
+        "metric": "ls"
+    },
+    {
+        "name":"PANCI MAXIM 18",
+        "desc": "Ukuran 18cm",
+        "price": "64,000",
+        "img": ["maxim_18.jpeg"],
+        "metric": "pcs"
+    },
+    {
+        "name":"SERBET ORCHID",
+        "desc": "",
+        "price": "price 2",
+        "img": ["serbet_orchid.jpeg"],
+        "metric": "ls"
+    },
+    {
+        "name":"SERBET GUNTING",
         "desc": "",
         "price": "price 1",
-        "img": ""
+        "img": ["serbet_gunting.jpeg"],
+        "metric": "ls"
     },
     {
-        "name":"item 2 sdfsdfsd",
+        "name":"CEMPAL WAJIK",
         "desc": "",
-        "price": "price 2",
-        "img": ""
+        "price": "2,500",
+        "img": ["cempal_wajik.jpeg"],
+        "metric": "pcs"
     },
     {
-        "name":"item 3",
+        "name":"PAYUNG LIPAT",
         "desc": "",
-        "price": "price 2",
-        "img": ""
+        "price": "30,000",
+        "img": [""],
+        "metric": "pcs"
     },
     {
-        "name":"item 4 sdfsdfsdf",
-        "desc": "",
-        "price": "price 2",
-        "img": ""
+        "name":"HANGER LOVE",
+        "desc": "Hanger plastik Kompkita",
+        "price": "15,000",
+        "img": [""],
+        "metric": "ls"
     },
     {
-        "name":"item 1",
-        "desc": "",
-        "price": "price 1",
-        "img": ""
+        "name":"KEMOCENG SNB",
+        "desc": "Kemoceng senar besar",
+        "price": "12,500",
+        "img": [""],
+        "metric": "pcs"
     },
     {
-        "name":"item 2 sdfsdfsd",
-        "desc": "",
-        "price": "price 2",
-        "img": ""
+        "name":"TEKO CN-1600",
+        "desc": "Teko Concerto 1.6L",
+        "price": "77,000",
+        "img": [""],
+        "metric": "pcs"
     },
     {
-        "name":"item 3",
+        "name":"SERBET SAKURA 02",
         "desc": "",
-        "price": "price 2",
-        "img": ""
+        "price": "52,000",
+        "img": ["serbet_sakura02.jpeg"],
+        "metric": "ls"
     },
     {
-        "name":"item 4 sdfsdfsdf",
+        "name":"SERBET SAKURA 03",
         "desc": "",
-        "price": "price 2",
-        "img": ""
+        "price": "60,000",
+        "img": ["serbet_sakura03.jpeg"],
+        "metric": "ls"
     },
     {
-        "name":"item 3",
+        "name":"SERBET SAKURA 04",
         "desc": "",
-        "price": "price 2",
-        "img": ""
-    },
-    {
-        "name":"item 4 sdfsdfsdf",
-        "desc": "",
-        "price": "price 2",
-        "img": ""
-    },
-    {
-        "name":"item 1",
-        "desc": "",
-        "price": "price 1",
-        "img": ""
-    },
-    {
-        "name":"item 2 sdfsdfsd",
-        "desc": "",
-        "price": "price 2",
-        "img": ""
+        "price": "35,000",
+        "img": ["serbet_sakura04.jpeg"],
+        "metric": "ls"
     },
     {
         "name":"item 3",
         "desc": "",
         "price": "price 2",
-        "img": ""
+        "img": [""],
+        "metric": "pcs"
     }
   ]

@@ -10,12 +10,17 @@
         v-bind:title="item.name"
         v-bind:price="item.price"
         v-bind:imgSrc="item.img"
+        v-bind:desc="item.desc"
+        v-bind:metric="item.metric"
       ></component-item>
     </div>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+import db from '../db.js'
+
 import Item from './item.vue'
 import Data from '../data.json'
 
@@ -25,12 +30,13 @@ export default {
   },
   data () {
     return {
-      items: Data,
+      items: [],
       search: ""
     }
   },
   computed: {
     searchItem: function() {
+      console.log("search")
       var self=this;
       return this.items.filter((item) => {
         return item.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0
@@ -45,6 +51,16 @@ export default {
         behavior: 'smooth' 
       });
     }
+  },
+  beforeCreate() {
+    console.log('mounted')
+    axios.get('http://api.elegant-houseware.tk/item')
+    .then((res) => {
+      this.items = res.data
+    })
+    .catch((err) => {
+      console.log(err)
+    })
   }
 }
 </script>

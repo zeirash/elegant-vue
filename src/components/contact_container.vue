@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <div v-if="show" id="modal-dialog">
+      <div v-if="show" class="modal-dialog">
           <div id="modal-content">
             <div id="modal-text">Success</div>
             <div v-on:click="closeModal" id="ok-button">OK</div>
@@ -163,16 +163,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:befor
 }
 
 /* modal dialog */
-#modal-dialog {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    background: rgba(0,0,0,0.8); 
-}
-
 #modal-content {
     position: relative;
     height: 150px;
