@@ -4,7 +4,7 @@
         <div class="layer-bg"></div>
         <div class="content-header">
           Elegant Jaya Houseware<br/>
-          <span>banyak pilihan, sedikit biaya</span>
+          <span>banyak pilihan, harga bersahabat</span>
         </div>
     </div>
     <search-container></search-container>

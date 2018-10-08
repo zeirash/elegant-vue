@@ -3,7 +3,7 @@
     <div class="content">
         <feature-card
           imgSrc="./dist/money.png"
-          description="Lorem ipsum, dolor sit amet consectetur adipisicing el!"
+          description=""
           title="Murah"
         ></feature-card>
         <feature-card
@@ -13,7 +13,7 @@
         ></feature-card>
         <feature-card
           imgSrc="./dist/users.png"
-          description="Lorem ipsum, dolor sit amet consectetur adipisicing el!"
+          description="Karena harga yang bersaing dan mutu berkualitas, kini produk2 UD Elegant Jaya sudah menyebar di berbagai tempat"
           title="Banyak Pelanggan"
         ></feature-card>
     </div>

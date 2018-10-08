@@ -45,5 +45,6 @@ export default {
 
 .feature-content {
     margin-top: 2em;
+    line-height: 1.4rem;
 }
 </style>

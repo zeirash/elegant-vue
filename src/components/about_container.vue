@@ -3,7 +3,9 @@
     <div class="about-title">Tentang Kami</div>
     <div class="about-content">
         <div class="inline">
-            <div class="about-img"></div>
+            <div class="about-img">
+                <div class="cover-img"></div>
+            </div>
         </div>
         <div class="inline description">
             <div class="about-desc">
@@ -56,21 +58,32 @@ export default {
 }
 
 .about-img {
-    width: 300px;
-    background-color: #ccc;
+    background: url("../assets/houseware.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 350px;
     height: 400px;
+}
+
+.cover-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    background-color: #000;
 }
 
 .about-desc {
     padding-left: 60px;
     font-size: 1.1rem;
+    line-height: 1.4rem;
 }
 
 .description {
     width: 60%;
 }
 
-@media screen and (max-width: 803px) {
+@media screen and (max-width: 928px) {
     .description {
         width: 100%;
     }

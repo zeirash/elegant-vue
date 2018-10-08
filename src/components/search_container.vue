@@ -1,7 +1,7 @@
 <template>
   <div id="search-container">
     <div class="input-container">
-      <input type="text" placeholder="Search item" class="input" v-model="search" v-on:focus="scrollToSearch()" />
+      <input type="text" placeholder="Cari barang" class="input" v-model="search" v-on:focus="scrollToSearch()" />
       <img src="../assets/search.png" class="search-icon" alt="" />
     </div>
     <div class="list-item">
@@ -19,7 +19,6 @@
 
 <script>
 import axios from 'axios'
-import db from '../db.js'
 
 import Item from './item.vue'
 import Data from '../data.json'

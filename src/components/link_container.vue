@@ -37,8 +37,8 @@
         <div class="icon loc">
           <img :src="loadImg('map_logo.png')" alt="" />
         </div>
-        <div class="text">lala<br/>
-        <span class="desc-text">jl sdlfkjsdf lt 9</span></div>
+        <div class="text">UD Elegant Jaya<br/>
+        <span class="desc-text">Ruko Royal Palem, Bl. Bl No.7, Duri Kepa, Jakarta Barat</span></div>
     </div>
   </div>
 </template>
