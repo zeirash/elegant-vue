@@ -8,9 +8,11 @@
     </div>
     <div class="link-group">
         <div class="icon">
-          <img :src="loadImg('whatsapp_logo.png')" alt="" />
+          <img :src="loadImg('shopee_logo.png')" alt="" />
         </div>
-        <div class="text">+62 812 3395 5556</div>
+        <div class="text">UD. Elegant Jaya<br/>
+        <span class="desc-text"><a href="https://shopee.co.id/timothy.wijaya_97" target="_blank">https://shopee.co.id/timothy.wijaya_97</a></span>
+        </div>
     </div>
     <div class="link-group">
         <div class="icon">
@@ -31,14 +33,14 @@
           <img :src="loadImg('map_logo.png')" alt="" />
         </div>
         <div class="text">Dupak Grosir Surabaya<br/>
-        <span class="desc-text">jl sdlfkjsdf lt 9</span></div>
+        <span class="desc-text">Blok EG5.10 Lt 1</span></div>
     </div>
     <div class="link-group">
         <div class="icon loc">
           <img :src="loadImg('map_logo.png')" alt="" />
         </div>
         <div class="text">UD Elegant Jaya<br/>
-        <span class="desc-text">Ruko Royal Palem, Bl. Bl No.7, Duri Kepa, Jakarta Barat</span></div>
+        <span class="desc-text">Ruko Royal Palem, Bl. Bl No.7, Duri Kepa<br/>Jakarta Barat</span></div>
     </div>
   </div>
 </template>

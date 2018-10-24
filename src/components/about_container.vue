@@ -9,10 +9,11 @@
         </div>
         <div class="inline description">
             <div class="about-desc">
-                UD Elegant Jaya merupakan
+                Sebuah toko yang penuh cerita, berawal dari pencarian supplier ke berbagai daerah dan muulai merintis fokus pada produk garment 
+                untuk kebutuhan rumah tangga seperti serbet, lap handuk, dan handuk. Seiring berjalannya waktu, UD Elegant Jaya mulai mengembangkan
+                sayapnya dengan menjual produk-produk perlengkapan rumah tangga hingga 300+ item dari berbagai supplier pilihan.
                 <br/><br/>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, corporis nemo! Laudantium voluptatum doloribus 
-                rem amet repellendus hic voluptates dicta, quia ratione adipisci? Velit assumenda dolore voluptates itaque. Blanditiis, officia.
+                Saat ini UD Elegant Jaya sudah memiliki toko fisik di 2 tempat. Surabaya, . Jakarta, 
                 <br/><br/>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, corporis nemo! Laudantium voluptatum doloribus 
                 rem amet repellendus hic voluptates dicta, quia ratione adipisci? Velit assumenda dolore voluptates itaque. Blanditiis, officia.

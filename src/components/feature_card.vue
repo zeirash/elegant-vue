@@ -30,7 +30,7 @@ export default {
     padding: 1.2em;
     background: #fff;
     margin: 2em 2em;
-    height: 420px;
+    height: 400px;
 }
 
 .feature-img {
