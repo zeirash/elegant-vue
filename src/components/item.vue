@@ -1,20 +1,20 @@
 <template>
-  <div class="item-container">
+  <div class="item-container" itemscope itemtype="http://schema.org/Product">
     <div class="inline">
       <div class="item-img">
         <div id="slider">
           <slider animation="normal" :auto="false" width="120px" height="120px" class="slider-container">
             <slider-item v-for="(img, index) in imgSrc" :key="index">
-              <img v-bind:src="loadImg(img)" width="120px" height="120px" :alt="title" class="slider-img" v-on:click="zoomImg(img, title)" />
+              <img v-bind:src="loadImg(img)" itemprop="image" width="120px" height="120px" :alt="title" class="slider-img" v-on:click="zoomImg(img, title)" />
             </slider-item>
           </slider>
         </div>
       </div>
     </div>
     <div class="inline content">
-        <div class="item-title">{{title}}</div>
-        <div class="item-desc">{{desc}}</div>
-        <div class="item-price">
+        <div class="item-title" itemprop="name">{{title}}</div>
+        <div class="item-desc" itemprop="description">{{desc}}</div>
+        <div class="item-price" itemprop="price">
           Grosir: Kontak kami<br/>
           Eceran: Rp. {{numberWithCommas(price)}}/{{metric}}
         </div>
@@ -22,8 +22,8 @@
     <!-- The Modal -->
       <div v-if="clicked" id="myModal" class="modal-dialog">
         <span class="close" v-on:click="closeImg()">&times;</span>
-        <img class="modal-img" :src="loadImg(myImg)">
-        <div id="caption">{{caption}}</div>
+        <img class="modal-img" :src="loadImg(myImg)" itemprop="image">
+        <div id="caption" itemprop="name">{{caption}}</div>
       </div>
     </div>
 </template>
