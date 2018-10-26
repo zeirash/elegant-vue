@@ -40,7 +40,7 @@
           <img :src="loadImg('map_logo.png')" alt="" />
         </div>
         <div class="text">UD Elegant Jaya<br/>
-        <span class="desc-text">Ruko Royal Palem, Bl. Bl No.7, Duri Kepa<br/>Jakarta Barat</span></div>
+        <span class="desc-text">Ruko Royal Palem, Bl. Bl No.7, Duri Kepa, Jakarta Barat</span></div>
     </div>
   </div>
 </template>
