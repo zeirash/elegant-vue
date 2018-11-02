@@ -21,7 +21,6 @@
 import axios from 'axios'
 
 import Item from './item.vue'
-import Data from '../data.json'
 
 export default {
   components: {
@@ -52,7 +51,6 @@ export default {
     }
   },
   beforeCreate() {
-    console.log('mounted')
     axios.get('http://api.elegant-houseware.tk/item')
     .then((res) => {
       this.items = res.data
