@@ -14,9 +14,9 @@
     <div class="inline content">
         <div class="item-title" itemprop="name">{{title}}</div>
         <div class="item-desc" itemprop="description">{{desc}}</div>
-        <div class="item-price" itemprop="price">
+        <div class="item-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           Grosir: Kontak kami<br/>
-          Eceran: Rp. {{numberWithCommas(price)}}/{{metric}}
+          Eceran: <span itemprop="priceCurrency" content="IDR">Rp.</span> <span itemprop="price">{{numberWithCommas(price)}}</span>/{{metric}}
         </div>
     </div>
     <!-- The Modal -->
