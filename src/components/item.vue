@@ -5,7 +5,7 @@
         <div id="slider">
           <slider animation="normal" :auto="false" width="120px" height="120px" class="slider-container">
             <slider-item v-for="(img, index) in imgSrc" :key="index">
-              <img v-bind:src="loadImg(img)" itemprop="image" width="120px" height="120px" :alt="title" class="slider-img" v-on:click="zoomImg(img, title)" />
+              <img v-bind:src="img" itemprop="image" width="120px" height="120px" :alt="title" class="slider-img" v-on:click="zoomImg(img, title)" />
             </slider-item>
           </slider>
         </div>
@@ -15,14 +15,15 @@
         <div class="item-title" itemprop="name">{{title}}</div>
         <div class="item-desc" itemprop="description">{{desc}}</div>
         <div class="item-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-          Grosir: Kontak kami<br/>
-          Eceran: <span itemprop="priceCurrency" content="IDR">Rp.</span> <span itemprop="price">{{numberWithCommas(price)}}</span>/{{metric}}
+          <div v-for="(data, index) in price_setup" :key="index">
+            <span itemprop="priceCurrency" content="IDR">Rp.</span> <span itemprop="price">{{numberWithCommas(data.price)}}</span>/{{data.metric}}
+          </div>
         </div>
     </div>
     <!-- The Modal -->
       <div v-if="clicked" id="myModal" class="modal-dialog">
         <span class="close" v-on:click="closeImg()">&times;</span>
-        <img class="modal-img" :src="loadImg(myImg)" itemprop="image">
+        <img class="modal-img" :src="myImg" itemprop="image">
         <div id="caption" itemprop="name">{{caption}}</div>
       </div>
     </div>
@@ -32,7 +33,7 @@
 import { Slider, SliderItem } from 'vue-easy-slider'
 
 export default {
-  props: ['title', 'price', 'imgSrc', 'desc', 'metric'],
+  props: ['title', 'price', 'imgSrc', 'desc', 'price_setup'],
   components: {
     'slider': Slider,
     'slider-item': SliderItem
@@ -45,9 +46,6 @@ export default {
     }
   },
   methods: {
-    loadImg: function (path) {
-      return './dist/' + path
-    },
     zoomImg: function(img, caption) {
       this.myImg = img
       this.caption = caption

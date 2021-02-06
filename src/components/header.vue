@@ -4,7 +4,7 @@
         <nav>
             <div class="menu-item logo"><a href="#top" v-smooth-scroll="{ duration: 800, offset: 0, container: '' }">
               <div class="logo-content">
-                <div><img :src="loadImg('icon.png')" width="30px" /></div>
+                <div><img src="../assets/icon.png" width="30px" /></div>
                 <span class="logo-title">Elegant Jaya</span>
               </div>
             </a></div>

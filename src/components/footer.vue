@@ -15,9 +15,6 @@
           <div class="header-group location-title">Lokasi Kami</div>
           <div class="flex-container">
             <location-container
-              imgSrc="./dist/map_dupak.png"
-            ></location-container>
-            <location-container
               imgSrc="./dist/map_palem.png"
             ></location-container>
           </div>

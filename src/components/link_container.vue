@@ -32,13 +32,6 @@
         <div class="icon loc">
           <img :src="loadImg('map_logo.png')" alt="" />
         </div>
-        <div class="text">Dupak Grosir Surabaya<br/>
-        <span class="desc-text">Blok EG5.10 Lt 1</span></div>
-    </div>
-    <div class="link-group">
-        <div class="icon loc">
-          <img :src="loadImg('map_logo.png')" alt="" />
-        </div>
         <div class="text">UD Elegant Jaya<br/>
         <span class="desc-text">Ruko Royal Palem, Bl. Bl No.7, Jakarta Barat</span></div>
     </div>
@@ -54,7 +47,7 @@ export default {
   },
   methods: {
     loadImg: function (path) {
-      return './dist/' + path
+      return '../assets/' + path
     }  
   }
 }

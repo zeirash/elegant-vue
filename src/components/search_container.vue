@@ -9,9 +9,9 @@
         v-bind:key="index"
         v-bind:title="item.name"
         v-bind:price="item.price"
-        v-bind:imgSrc="item.img"
+        v-bind:imgSrc="item.image"
         v-bind:desc="item.desc"
-        v-bind:metric="item.metric"
+        v-bind:price_setup="item.price_setup"
       ></component-item>
     </div>
   </div>
@@ -44,16 +44,17 @@ export default {
   methods: {
     scrollToSearch: function() {
       window.scroll({
-        top: 400, 
-        left: 0, 
-        behavior: 'smooth' 
+        top: 400,
+        left: 0,
+        behavior: 'smooth'
       });
     }
   },
   beforeCreate() {
-    axios.get('http://api.elegant-houseware.tk/item')
+    axios.get('http://localhost:5000/elegantjaya-4d521/us-central1/getItems')
     .then((res) => {
-      this.items = res.data
+      this.items = res.data.payload.items
+      console.log('items:',res.data.payload.items[0])
     })
     .catch((err) => {
       console.log(err)
