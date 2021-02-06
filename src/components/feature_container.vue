@@ -2,17 +2,17 @@
   <div id="feature-container">
     <div class="content">
         <feature-card
-          imgSrc="../assets/money.png"
+          imgSrc="money.png"
           description="Produk yang dijual berasal dari supplier terbaik di berbagai daerah nusantara. Sehingga harga yang ditawarkan bersahabat di kantong masyarakat."
           title="Murah"
         ></feature-card>
         <feature-card
-          imgSrc="../assets/recommended.png"
+          imgSrc="recommended.png"
           description="Dengan berbagai banyak pertimbangan dalam penentuan supplier, maka produk memiliki kualitas yang baik."
           title="Bermutu"
         ></feature-card>
         <feature-card
-          imgSrc="../assets/users.png"
+          imgSrc="users.png"
           description="Dengan harga yang bersaing dan kualitas yang baik, kini produk2 UD Elegant Jaya sudah menyebar di berbagai daerah di seluruh nusantara."
           title="Banyak Pelanggan"
         ></feature-card>
@@ -21,19 +21,14 @@
 </template>
 
 <script>
-import FeatureCard from './feature_card.vue'
+import FeatureCard from './feature_card'
 
 export default {
   components: {
       'feature-card': FeatureCard
   },
   data () {
-    return {
-
-    }
-  },
-  computed: {
-
+    return {}
   }
 }
 </script>

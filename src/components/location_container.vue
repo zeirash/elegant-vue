@@ -3,7 +3,7 @@
       <div class="location-content">
           <div class="location-group">
               <div class="location-map">
-                  <img v-bind:src="imgSrc" alt="" />
+                  <img v-bind:src="loadImg(imgSrc)" alt="" />
               </div>
           </div>
       </div>
@@ -14,12 +14,12 @@
 export default {
   props: ['imgSrc'],
   data () {
-    return {
-
-    }
+    return {}
   },
   methods: {
-      
+    loadImg: function (path) {
+      return require('../assets/' + path)
+    }
   }
 }
 </script>

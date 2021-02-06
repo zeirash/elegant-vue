@@ -25,9 +25,7 @@ export default {
     'about-container': AboutContainer
   },
   data () {
-    return {
-      
-    }
+    return {}
   }
 }
 </script>

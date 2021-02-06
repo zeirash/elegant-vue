@@ -27,12 +27,7 @@
 <script>
 export default {
   data () {
-    return {
-
-    }
-  },
-  computed: {
-
+    return {}
   }
 }
 </script>

@@ -7,15 +7,13 @@
           <contact-container></contact-container>
         </div>
         <div id="link-container">
-          <link-container
-            waIcon="./dist/whatsapp_logo.png"
-          ></link-container>
+          <link-container></link-container>
         </div>
         <div id="location-container">
           <div class="header-group location-title">Lokasi Kami</div>
           <div class="flex-container">
             <location-container
-              imgSrc="./dist/map_palem.png"
+              imgSrc="map_palem.png"
             ></location-container>
           </div>
         </div>
@@ -25,9 +23,9 @@
 </template>
 
 <script>
-import ContactContainer from './contact_container.vue'
-import LocationContainer from './location_container.vue'
-import LinkContainer from './link_container.vue'
+import ContactContainer from './contact_container'
+import LocationContainer from './location_container'
+import LinkContainer from './link_container'
 
 export default {
   components: {
@@ -36,9 +34,7 @@ export default {
       'link-container': LinkContainer
   },
   data () {
-    return {
-
-    }
+    return {}
   }
 }
 </script>

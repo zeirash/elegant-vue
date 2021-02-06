@@ -38,7 +38,7 @@ export default {
       var self=this;
       return this.items.filter((item) => {
         return item.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0
-        });
+      });
     }
   },
   methods: {

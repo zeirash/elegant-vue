@@ -41,14 +41,12 @@
 <script>
 export default {
   data () {
-    return {
-
-    }
+    return {}
   },
   methods: {
     loadImg: function (path) {
-      return '../assets/' + path
-    }  
+      return require('../assets/' + path)
+    }
   }
 }
 </script>

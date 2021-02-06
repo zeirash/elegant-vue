@@ -1,7 +1,7 @@
 <template>
   <div class="feature-card">
     <div class="feature-img">
-        <img v-bind:src="imgSrc" width="100" height="auto" alt="icon" />
+        <img v-bind:src="loadImg(imgSrc)" width="100" height="auto" alt="icon" />
     </div>
     <div class="feature-title">{{title}}</div>
     <div class="feature-content">
@@ -14,8 +14,12 @@
 export default {
   props: ['imgSrc', 'title', 'description'],
   data () {
-    return {
-      
+    return {}
+  },
+  methods: {
+    loadImg: function (path) {
+      console.log('path:',path)
+      return require('../assets/' + path)
     }
   }
 }
