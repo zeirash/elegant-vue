@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     loadImg: function (path) {
-      return './dist/' + path
+      return require('../assets/' + path)
     },
     handleScroll () {
       if(window.scrollY > 30) this.isScroll = true

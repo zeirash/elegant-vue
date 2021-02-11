@@ -18,7 +18,6 @@ export default {
   },
   methods: {
     loadImg: function (path) {
-      console.log('path:',path)
       return require('../assets/' + path)
     }
   }
